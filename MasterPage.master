@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+         <link href="CSS/StyleSheet.css" rel="Stylesheet" type="text/css" />
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+
+        <h1> Hashim Computer Science Database</h1>
+
+      <div class="left">
+        <ul>
+            <li style="margin-top: 0px"><a href="Default.aspx">Database Browse</a></li>
+            <li><a href="Default123.aspx">Database Edit</a></li>
+            <li><a href="Report.aspx">Report</a></li>
+            
+
+           
+        </ul>
+    </div>
+
+        
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
